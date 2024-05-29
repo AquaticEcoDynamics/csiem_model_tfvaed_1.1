@@ -1,0 +1,90 @@
+! Discharges for Cockburn Sound BGC Water Quality model for 20220101 to 2020101
+
+!!!! OUTFALLS ------------------------------------------------------------------------------
+
+! PSDP Direct insertion
+bc == QC, 115.76814,-32.20014  ,  ../../../bc_repo/7_discharges/PSDP/PSDP1_20100101_20221231_wq.csv
+  bc header == Date,Q,Salt,Temp,Zeroes,Ones,DO, Ones,Ones,Ones,Ones,   Ones,Ones,Ones,Ones,Ones,Ones,Ones,Ones,Ones,Ones,Ones,Zeroes,Zeroes,Ones,Zeroes,Zeroes
+!              Date,Q,Salt,Temp,TRACE1,TSS, Oxy, Amm, Nit, FRP, FRP_ads,DOC, POC, DON, PON, DOP, POP, GRN, BGA,CRYPT,MDIAT,DINO,TRC1,TRC2,TRC3,TRC4,AGE
+  bc scale ==     1.0,1.00,1.00,1.0000,0.01,1.00,0.01,0.01,0.01,0.01,   0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01, 0.01,1,1,1,1,1
+  bc default == 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+  vertical coordinate type == depth
+  vertical distribution == ../../../bc_repo/7_discharges/DischargeDepth_001.csv
+end bc
+
+! Ti West Discharge
+bc == QC, 115.756185,-32.232613  ,  ../../../bc_repo/7_discharges/TiWest/TiWest_20100101_20221231_wq.csv
+  bc header == Date,Q,Salt,Temp,Zeroes,Ones,DO, Ones,Ones,Ones,Ones,   Ones,Ones,Ones,Ones,Ones,Ones,Ones,Ones,Ones,Ones,Ones,Zeroes,Zeroes,Zeroes,Ones,Zeroes
+!              Date,Q,Salt,Temp,TRACE1,TSS, Oxy, Amm, Nit, FRP, FRP_ads,DOC, POC, DON, PON, DOP, POP, GRN, BGA,CRYPT,MDIAT,DINO,TRC1,TRC2,TRC3,TRC4,AGE
+  bc scale ==     1.0,1.00,1.00,1.0000,0.01,1.00,0.01,0.01,0.01,0.01,   0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01, 0.01,1,1,1,1,1
+  bc default == 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+  vertical coordinate type == depth
+  vertical distribution == ../../../bc_repo/7_discharges/DischargeDepth_001.csv
+end bc
+
+! BP Discharge
+bc == QC, 115.760187,-32.217654  ,  ../../../bc_repo/7_discharges/BP/BP_20100101_20221231_wq.csv
+  bc header == Date,Q,Salt,Temp,Zeroes,Ones,DO, Ones,Ones,Ones,Ones,   Ones,Ones,Ones,Ones,Ones,Ones,Ones,Ones,Ones,Ones,Ones,Zeroes,Zeroes,Zeroes,Ones,Zeroes
+!              Date,Q,Salt,Temp,TRACE1,TSS, Oxy, Amm, Nit, FRP, FRP_ads,DOC, POC, DON, PON, DOP, POP, GRN, BGA,CRYPT,MDIAT,DINO,TRC1,TRC2,TRC3,TRC4,AGE
+  bc scale ==     1.0,1.00,1.00,1.0000,0.01,1.00,0.01,0.01,0.01,0.01,   0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01, 0.01,1,1,1,1,1
+  bc default == 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+  vertical coordinate type == depth
+  vertical distribution == ../../../bc_repo/7_discharges/DischargeDepth_001.csv
+end bc
+
+! KPS - Stage A+B Discharge
+bc == QC, 115.772514,-32.197657  ,  ../../../bc_repo/7_discharges/KPS/KPS_A_B_20100101_20221231_wq.csv
+  bc header == Date,Q,Salt,Temp,Zeroes,Ones,DO, Ones,Ones,Ones,Ones,   Ones,Ones,Ones,Ones,Ones,Ones,Ones,Ones,Ones,Ones,Ones,Zeroes,Zeroes,Zeroes,Ones,Zeroes
+!              Date,Q,Salt,Temp,TRACE1,TSS, Oxy, Amm, Nit, FRP, FRP_ads,DOC, POC, DON, PON, DOP, POP, GRN, BGA,CRYPT,MDIAT,DINO,TRC1,TRC2,TRC3,TRC4,AGE
+  bc scale ==     1.0,1.00,1.00,1.0000,0.01,1.00,0.01,0.01,0.01,0.01,   0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01, 0.01,1,1,1,1,1
+  bc default == 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+  vertical coordinate type == depth
+  vertical distribution == ../../../bc_repo/7_discharges/DischargeDepth_001.csv
+end bc
+
+! KPS - Stage C Discharge
+bc == QC, 115.772244,-32.198198  ,  ../../../bc_repo/7_discharges/KPS/KPS_C_CPS_20100101_20221231_wq.csv
+  bc header == Date,Q,Salt,Temp,Zeroes,Ones,DO, Ones,Ones,Ones,Ones,   Ones,Ones,Ones,Ones,Ones,Ones,Ones,Ones,Ones,Ones,Ones,Zeroes,Zeroes,Zeroes,Ones,Zeroes
+!              Date,Q,Salt,Temp,TRACE1,TSS, Oxy, Amm, Nit, FRP, FRP_ads,DOC, POC, DON, PON, DOP, POP, GRN, BGA,CRYPT,MDIAT,DINO,TRC1,TRC2,TRC3,TRC4,AGE
+  bc scale ==     1.0,1.00,1.00,1.0000,0.01,1.00,0.01,0.01,0.01,0.01,   0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01, 0.01,1,1,1,1,1
+  bc default == 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+  vertical coordinate type == depth
+  vertical distribution == ../../../bc_repo/7_discharges/DischargeDepth_001.csv
+end bc
+
+! SDOOL Discharge, previously in 7_discharge/SDOOL/, replaced with NOD outfall data from Woodman Point, East Rockingham and Point Peron
+bc == QC, 115.6563294,-32.28971038  ,  ../../../bc_repo/7_discharges/NOD/Woodman_Point_NOD_20100101_20230101_wq.csv
+  bc header == Date,Q,Salt,Temp,Zeroes,TSS, DO, AMM,NIT,FRP, FRPADS, DOC,POC,DON,PON,DOP,POP,GRN,BGA,CRYPT,MDIAT,DINO, ZEROS, ZEROS, ZEROS, ZEROS, ZEROS
+!              Date,Q,Salt,Temp,TRACE1,TSS, Oxy, Amm, Nit, FRP, FRP_ads,DOC, POC, DON, PON, DOP, POP, GRN, BGA,CRYPT,MDIAT,DINO,TRC1,TRC2,TRC3,TRC4,AGE
+  vertical coordinate type == depth
+  vertical distribution == ../../../bc_repo/7_discharges/DischargeDepth_001.csv
+end bc
+
+bc == QC, 115.6563294,-32.28971038  ,  ../../../bc_repo/7_discharges/NOD/East_Rockingham_NOD_20100101_20230101_wq.csv
+  bc header == Date,Q,Salt,Temp,Zeroes,TSS, DO, AMM,NIT,FRP, FRPADS, DOC,POC,DON,PON,DOP,POP,GRN,BGA,CRYPT,MDIAT,DINO, ZEROS, ZEROS, ZEROS, ZEROS, ZEROS
+!              Date,Q,Salt,Temp,TRACE1,TSS, Oxy, Amm, Nit, FRP, FRP_ads,DOC, POC, DON, PON, DOP, POP, GRN, BGA,CRYPT,MDIAT,DINO,TRC1,TRC2,TRC3,TRC4,AGE
+  vertical coordinate type == depth
+  vertical distribution == ../../../bc_repo/7_discharges/DischargeDepth_001.csv
+end bc
+
+bc == QC, 115.6563294,-32.28971038  ,  ../../../bc_repo/7_discharges/NOD/Point_Peron_NOD_20100101_20230101_wq.csv
+  bc header == Date,Q,Salt,Temp,Zeroes,TSS, DO, AMM,NIT,FRP, FRPADS, DOC,POC,DON,PON,DOP,POP,GRN,BGA,CRYPT,MDIAT,DINO, ZEROS, ZEROS, ZEROS, ZEROS, ZEROS
+!              Date,Q,Salt,Temp,TRACE1,TSS, Oxy, Amm, Nit, FRP, FRP_ads,DOC, POC, DON, PON, DOP, POP, GRN, BGA,CRYPT,MDIAT,DINO,TRC1,TRC2,TRC3,TRC4,AGE
+  vertical coordinate type == depth
+  vertical distribution == ../../../bc_repo/7_discharges/DischargeDepth_001.csv
+end bc
+
+! other NOD Discharge aside from SDOOL, including Beenyup and Subiaco; Alkimos is outside of domain so not included
+bc == QC, 115.7116,-31.7631  ,  ../../../bc_repo/7_discharges/NOD/Beenyup_NOD_20100101_20230101_wq.csv
+  bc header == Date,Q,Salt,Temp,Zeroes,TSS, DO, AMM,NIT,FRP, FRPADS, DOC,POC,DON,PON,DOP,POP,GRN,BGA,CRYPT,MDIAT,DINO, ZEROS, ZEROS, ZEROS, ZEROS, ZEROS
+!              Date,Q,Salt,Temp,TRACE1,TSS, Oxy, Amm, Nit, FRP, FRP_ads,DOC, POC, DON, PON, DOP, POP, GRN, BGA,CRYPT,MDIAT,DINO,TRC1,TRC2,TRC3,TRC4,AGE
+  vertical coordinate type == depth
+  vertical distribution == ../../../bc_repo/7_discharges/DischargeDepth_001.csv
+end bc
+
+bc == QC, 115.7437,-31.9553  ,  ../../../bc_repo/7_discharges/NOD/Subiaco_NOD_20100101_20230101_wq.csv
+  bc header == Date,Q,Salt,Temp,Zeroes,TSS, DO, AMM,NIT,FRP, FRPADS, DOC,POC,DON,PON,DOP,POP,GRN,BGA,CRYPT,MDIAT,DINO, ZEROS, ZEROS, ZEROS, ZEROS, ZEROS
+!              Date,Q,Salt,Temp,TRACE1,TSS, Oxy, Amm, Nit, FRP, FRP_ads,DOC, POC, DON, PON, DOP, POP, GRN, BGA,CRYPT,MDIAT,DINO,TRC1,TRC2,TRC3,TRC4,AGE
+  vertical coordinate type == depth
+  vertical distribution == ../../../bc_repo/7_discharges/DischargeDepth_001.csv
+end bc

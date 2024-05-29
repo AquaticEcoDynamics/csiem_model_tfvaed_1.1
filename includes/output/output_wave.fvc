@@ -1,0 +1,9 @@
+output dir == ..\..\outputs\results !Scratch 1
+
+
+output == netcdf
+  suffix == wave
+  output parameters == h,d,v,w,sal,temp,wvht,wvper,wvdir,wvstr,TAUC,TAUW,TAUCW
+  output interval == 14400
+end output 
+
